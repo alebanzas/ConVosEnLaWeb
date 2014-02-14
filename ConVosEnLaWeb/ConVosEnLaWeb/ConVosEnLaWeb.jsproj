@@ -88,6 +88,11 @@
     <Content Include="images\tiles\widelogo.scale-80.png" />
     <Content Include="js\default.js" />
     <Content Include="css\default.css" />
+    <Content Include="js\navigator.js" />
+    <Content Include="pages\home\home.css" />
+    <Content Include="pages\home\home.html" />
+    <Content Include="pages\home\home.js" />
+    <Content Include="videos\presentacion.mp4" />
     <None Include="ConVosEnLaWeb_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
