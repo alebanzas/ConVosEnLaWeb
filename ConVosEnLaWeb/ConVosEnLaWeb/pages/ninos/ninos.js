@@ -3,29 +3,21 @@
 
     var nav = WinJS.Navigation;
     
-    WinJS.UI.Pages.define("/pages/home/home.html", {
+    WinJS.UI.Pages.define("/pages/ninos/ninos.html", {
         ready: function (element, options) {
-            var ninos = document.getElementById("ninos");
-            var adolescentes = document.getElementById("adolescentes");
-            var padres = document.getElementById("padres");
-            var docentes = document.getElementById("docentes");
+            var consejos = document.getElementById("consejos");
+            var vacaciones = document.getElementById("vacaciones");
             var presentacion = document.getElementById("presentacion");
         	
-	        ninos.onclick = function () {
-	            nav.navigate("/pages/ninos/ninos.html", nav.state);
+	        consejos.onclick = function () {
+	            nav.navigate("/pages/consejosNinos/consejosNinos.html", nav.state);
             };
-	        adolescentes.onclick = function () {
-	            nav.navigate("/pages/adolescentes/adolescentes.html", nav.state);
-            };
-	        padres.onclick = function () {
-	            nav.navigate("/pages/padres/padres.html", nav.state);
-            };
-	        docentes.onclick = function () {
-	            nav.navigate("/pages/docentes/docentes.html", nav.state);
+	        vacaciones.onclick = function () {
+	            nav.navigate("/pages/vacaciones/vacaciones.html", nav.state);
 	        };
             
-	        var header = document.querySelector(".homepage header[role=banner]");
-	        enterAnimation([header], [ninos, padres], [adolescentes, docentes], [presentacion]);
+	        var header = document.querySelector(".ninos header[role=banner]");
+	        enterAnimation([header], [consejos, vacaciones], [presentacion], []);
 	    },
     });
 
