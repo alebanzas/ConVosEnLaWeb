@@ -5,27 +5,27 @@
     
     WinJS.UI.Pages.define("/pages/padres/padres.html", {
         ready: function (element, options) {
-            var ninos = document.getElementById("ninos");
-            var adolescentes = document.getElementById("adolescentes");
-            var padres = document.getElementById("padres");
-            var docentes = document.getElementById("docentes");
+            var amenazas = document.getElementById("amenazas");
+            var consejos = document.getElementById("consejos");
+            var glosario = document.getElementById("glosario");
+            var guias = document.getElementById("guias");
             var presentacion = document.getElementById("presentacion");
         	
-	        ninos.onclick = function () {
-	            nav.navigate("/pages/ninos/ninos.html", nav.state);
+	        amenazas.onclick = function () {
+	            nav.navigate("/pages/amenazas/amenazas.html", nav.state);
             };
-	        adolescentes.onclick = function () {
-	            nav.navigate("/pages/adolescentes/adolescentes.html", nav.state);
+	        consejos.onclick = function () {
+	            nav.navigate("/pages/consejos/consejos.html", nav.state);
             };
-	        padres.onclick = function () {
-	            nav.navigate("/pages/padres/padres.html", nav.state);
-            };
-	        docentes.onclick = function () {
-	            nav.navigate("/pages/docentes/docentes.html", nav.state);
+	        glosario.onclick = function () {
+	            nav.navigate("/pages/glosario/glosario.html", nav.state);
+	        };
+	        guias.onclick = function () {
+	            nav.navigate("/pages/guias/guias.html", nav.state);
 	        };
             
 	        var header = document.querySelector(".padres header[role=banner]");
-	        enterAnimation([header], [ninos, padres], [adolescentes, docentes], [presentacion]);
+	        enterAnimation([header], [amenazas, glosario], [consejos, guias], [presentacion]);
 	    },
     });
 

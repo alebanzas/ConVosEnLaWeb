@@ -32,22 +32,22 @@
 
 /* Layout */
 
-#ninos {
+#amenazas {
 	-ms-grid-row: 1;
 	-ms-grid-column: 1;
 }
 
-#adolescentes {
+#consejos {
 	-ms-grid-row: 1;
 	-ms-grid-column: 2;
 }
 
-#padres {
+#glosario {
 	-ms-grid-row: 2;
 	-ms-grid-column: 1;
 }
 
-#docentes {
+#guias {
 	-ms-grid-row: 2;
 	-ms-grid-column: 2;
 }
@@ -193,22 +193,22 @@
 		-ms-grid-column: 1;
 	}
 
-	#ninos {
+	#amenazas {
 		-ms-grid-row: 2;
 		-ms-grid-column: 1;
 	}
 
-	#adolescentes {
+	#consejos {
 		-ms-grid-row: 3;
 		-ms-grid-column: 1;
 	}
 
-	#padres {
+	#glosario {
 		-ms-grid-row: 4;
 		-ms-grid-column: 1;
 	}
 
-	#docentes {
+	#guias {
 		-ms-grid-row: 5;
 		-ms-grid-column: 1;
 	}
