@@ -1,4 +1,4 @@
-﻿.ninos section[role=main] {
+﻿.consejosNinos section[role=main] {
     -ms-grid-row: 2;
     -ms-grid-row-span: 2;
 }
@@ -42,12 +42,12 @@
 	-ms-grid-column: 2;
 }
 
-#consejos {
+#consejosNinos {
 	-ms-grid-row: 2;
 	-ms-grid-column: 1;
 }
 
-#vacaciones {
+#docentes {
 	-ms-grid-row: 2;
 	-ms-grid-column: 2;
 }
@@ -203,12 +203,12 @@
 		-ms-grid-column: 1;
 	}
 
-	#consejos {
+	#consejosNinos {
 		-ms-grid-row: 4;
 		-ms-grid-column: 1;
 	}
 
-	#vacaciones {
+	#docentes {
 		-ms-grid-row: 5;
 		-ms-grid-column: 1;
 	}

@@ -3,7 +3,7 @@
 
     var nav = WinJS.Navigation;
     
-    WinJS.UI.Pages.define("/pages/home/home.html", {
+    WinJS.UI.Pages.define("/pages/padres/padres.html", {
         ready: function (element, options) {
             var ninos = document.getElementById("ninos");
             var adolescentes = document.getElementById("adolescentes");
@@ -24,7 +24,7 @@
 	            nav.navigate("/pages/docentes/docentes.html", nav.state);
 	        };
             
-	        var header = document.querySelector(".homepage header[role=banner]");
+	        var header = document.querySelector(".padres header[role=banner]");
 	        enterAnimation([header], [ninos, padres], [adolescentes, docentes], [presentacion]);
 	    },
     });
