@@ -11,13 +11,13 @@
             var presentacion = document.getElementById("presentacion");
         	
 	        amenazas.onclick = function () {
-	            nav.navigate("/pages/amenazas/amenazas.html", nav.state);
+	            nav.navigate("/pages/amenazas/amenazas.html?theme=adolescentes", nav.state);
             };
 	        consejos.onclick = function () {
-	            nav.navigate("/pages/consejos/consejos.html", nav.state);
+	            nav.navigate("/pages/consejos/consejos.html?theme=adolescentes", nav.state);
             };
 	        vacaciones.onclick = function () {
-	            nav.navigate("/pages/vacaciones/vacaciones.html", nav.state);
+	            nav.navigate("/pages/vacaciones/vacaciones.html?theme=adolescentes", nav.state);
 	        };
             
 	        var header = document.querySelector(".adolescentes header[role=banner]");

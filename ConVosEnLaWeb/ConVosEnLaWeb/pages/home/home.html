@@ -19,7 +19,9 @@
         <header aria-label="Header content" role="banner">
             <button data-win-control="WinJS.UI.BackButton"></button>
             <h1 class="titlearea win-type-ellipsis">
-                <span class="pagetitle">Con vos en la Web</span>
+                <span class="pagehometitle">
+                    <img src="/images/home/logo.png" style="height: 80px;" />
+                </span>
             </h1>
         </header>
         <section aria-label="Main content" role="main">
@@ -30,7 +32,7 @@
 				        <div class="backgroundImage">
                             <img src="/images/home/ninos.png" alt="" />
 				        </div>
-				        <div class="stripe yellow">
+				        <div class="stripe">
 					        <div class="diagonal"></div>
 					        <h4>Niños</h4>
 				        </div>
@@ -40,7 +42,7 @@
 		                <div class="backgroundImage">
                             <img src="/images/home/adolescentes.png" alt="" />
 		                </div>
-		                <div class="stripe yellow">
+		                <div class="stripe">
 		                    <div class="diagonal"></div>
 		                    <h4>Adolescentes</h4>
 		                </div>
@@ -50,7 +52,7 @@
                         <div class="backgroundImage">
                             <img src="/images/home/padres.png" alt="" />
                         </div>
-                        <div class="stripe yellow">
+                        <div class="stripe">
                             <div class="diagonal"></div>
                             <h4>Padres</h4>
                         </div>
@@ -60,21 +62,32 @@
                         <div class="backgroundImage">
                             <img src="/images/home/docentes.png" alt="" />
                         </div>
-                        <div class="stripe yellow">
+                        <div class="stripe">
                             <div class="diagonal"></div>
                             <h4>Docentes</h4>
                         </div>
                     </div>
 
-		            <div id="presentacion" class="bigSquare">
-		                <div class="backgroundImage">
-		                    <img src="/images/home/presentacion.png" alt=""/>
-		                </div>
-		                <div class="stripe yellow">
-		                    <div class="diagonal"></div>
-		                    <h4 class="doble">Presentación</h4>    
-		                </div>
-		            </div>
+                    <div id="presentacion" class="bigSquare">
+                        <div style="display: table-cell; vertical-align: middle;">
+                            <video id="video"
+                                   src="/videos/presentacion.mp4"
+                                   controls="controls"
+                                   style="width: 100%; height: 360px; background-color: rgb(8, 159, 171);"
+                                   poster="/images/home/poster.png"></video>
+                        </div>
+                    </div>
+
+
+                    <div id="quienes" class="midSquare">
+                        <div class="backgroundImage">
+                            <img src="/images/home/quienes.png" alt="" />
+                        </div>
+                        <div class="stripe">
+                            <div class="diagonal"></div>
+                            <h4>¿Quíenes somos?</h4>
+                        </div>
+                    </div>
 
 		        </div>
             </div>
