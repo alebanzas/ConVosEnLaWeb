@@ -11,7 +11,7 @@
 	padding-left: 120px;
 }
 
-.contentBox {
+.fragment.homepage .contentBox {
 	display: -ms-grid;
 	-ms-grid-rows: 270px 270px;
 	-ms-grid-columns: 270px 270px 540px 120px; /* La última columna es sólo margen */
@@ -32,253 +32,106 @@
 
 /* Layout */
 
-#ninos {
+.fragment.homepage #ninos {
 	-ms-grid-row: 1;
 	-ms-grid-column: 1;
 }
 
-#adolescentes {
+.fragment.homepage #adolescentes {
 	-ms-grid-row: 1;
 	-ms-grid-column: 2;
 }
 
-#padres {
+.fragment.homepage #padres {
 	-ms-grid-row: 2;
 	-ms-grid-column: 1;
 }
 
-#docentes {
+.fragment.homepage #docentes {
 	-ms-grid-row: 2;
 	-ms-grid-column: 2;
 }
 
-#presentacion {
+.fragment.homepage #presentacion {
 	-ms-grid-row: 1;
 	-ms-grid-column: 3;
+    background-color: #089FAB;
 }
 
-.wide {
-	height: 250px;
-	width: 520px;
-	-ms-grid-column-span: 2;
-	margin: 10px;
-	display: -ms-grid;
-	-ms-grid-rows: 1fr;
-	-ms-grid-columns: 1fr 170px;
-}
-
-.wide .backgroundImage img {
-	-ms-grid-column-span: 2;
-	height: 250px;
-	width: 520px;
-}
-
-
-.wide .wedge {
-	-ms-grid-column: 2;
-	display: -ms-grid;
-	-ms-grid-columns: 1fr 120px;
-}
-
-.wide .wedge .diagonal {
-	content: ' ';
-	-ms-grid-column: 1;
-	display: block;
-	border-top: 250px solid transparent;
-	border-right: 50px solid #ffbe00;
-}
-
-.wide .wedge h4 {
-	-ms-grid-column: 2;
-	padding: 210px 20px 0;
-	height: 40px;
-	width: 80px;
-}
-
-.square {
-	height: 250px;
-	width: 250px;
-	margin: 10px;
-	display: -ms-grid;
-	-ms-grid-rows: 1fr 50px;
-}
-
-.square .backgroundImage img {
-	-ms-grid-row-span: 2;
-	height: 250px;
-	width: 250px;
-}
-
-.square .stripe {
+.fragment.homepage #quienes {
 	-ms-grid-row: 2;
-	display: -ms-grid;
-	-ms-grid-columns: 1fr 200px;
+	-ms-grid-column: 3;
+    background-color: #089FAB;
 }
 
-.square .stripe h4 {
-	-ms-grid-column: 2;
-	height: 30px;
-	width: 180px;
-	padding: 10px 20px 10px 0;
+.fragment.homepage .square#ninos .stripe h4 {
+	background-color: #DC1070;
 }
 
-.square .stripe .diagonal {
-	-ms-grid-column: 1;
-	content: '';
-	border-top: 50px solid transparent;
-	border-right: 20px solid #ffbe00;
+.fragment.homepage .square#adolescentes .stripe h4 {
+	background-color: #657EBD;
 }
 
-.bigSquare {
-	height: 520px;
-	width: 520px;
-	-ms-grid-row-span: 2;
-	margin: 10px;
-	display: -ms-grid;
-	-ms-grid-rows: 1fr 100px;
+.fragment.homepage .square#padres .stripe h4 {
+	background-color: #99C639;
 }
 
-.bigSquare .backgroundImage img {
-	height: 520px;
-	width: 520px;
+.fragment.homepage .square#docentes .stripe h4 {
+	background-color: #88579F;
 }
 
-.bigSquare .stripe {
-	-ms-grid-row: 2;
-	display: -ms-grid;
-	-ms-grid-columns: 1fr 440px;
+.fragment.homepage .midSquare#quienes .stripe h4 {
+	background-color: #02ACB8;
 }
 
-.bigSquare .stripe .diagonal {
-	-ms-grid-column: 1;
-	content: '';
-	border-top: 100px solid transparent;
-	border-right: 40px solid #ffbe00;
+.fragment.homepage .square#ninos .stripe .diagonal {
+	border-right: 20px solid #DC1070;
 }
 
-.bigSquare .stripe h4 {
-	-ms-grid-column: 2;
-	height: 30px;
-	width: 400px;
-	padding: 35px 20px;
+.fragment.homepage .square#adolescentes .stripe .diagonal {
+	border-right: 20px solid #657EBD;
 }
 
-.yellow h4 {
-	color: #282b4a;
-	background-color: #ffbe00;
+.fragment.homepage .square#padres .stripe .diagonal {
+	border-right: 20px solid #99C639;
 }
+
+.fragment.homepage .square#docentes .stripe .diagonal {
+	border-right: 20px solid #88579F;
+}
+
+.fragment.homepage .midSquare#quienes .stripe .diagonal {
+	border-right: 20px solid #02ACB8;
+}
+
 
 @media screen and (-ms-view-state: snapped) {
 
-	#scrollContainer {
-		overflow-x: hidden;
-		overflow-y: auto;
-		-ms-overflow-style: scrollbar;
-		padding-left: 40px;
-	}
-
-    .contentBox {
-	    -ms-grid-rows: 100px 100px 100px 100px 100px;
-	    -ms-grid-columns: 1fr;
-    }
-
-	.contentBox h4 {
-		text-align: left;
-	}
-
 	/* Layout */
 
-	#presentacion {
+	.fragment.homepage #presentacion {
 		-ms-grid-row: 1;
 		-ms-grid-column: 1;
 	}
 
-	#ninos {
+	.fragment.homepage #ninos {
 		-ms-grid-row: 2;
 		-ms-grid-column: 1;
 	}
 
-	#adolescentes {
+	.fragment.homepage #adolescentes {
 		-ms-grid-row: 3;
 		-ms-grid-column: 1;
 	}
 
-	#padres {
+	.fragment.homepage #padres {
 		-ms-grid-row: 4;
 		-ms-grid-column: 1;
 	}
 
-	#docentes {
+	.fragment.homepage #docentes {
 		-ms-grid-row: 5;
 		-ms-grid-column: 1;
-	}
-
-	.backgroundImage {
-		display: none;
-	}
-
-	.square, .bigSquare, .wide {
-		height: 70px;
-		width: 220px;
-		margin: 10px;
-		padding: 0;
-	}
-
-	.wide {
-		-ms-grid-column-span: 1;
-		-ms-grid-columns: 1fr;
-	}
-
-	.wide .wedge {
-		-ms-grid-column: 1;
-		-ms-grid-columns: 1fr;
-	}
-
-	.wide .wedge .diagonal {
-		display: none;
-	}
-
-	.wide .wedge h4 {
-		-ms-grid-column: 1;
-		padding: 20px;
-		height: 30px;
-		width: 180px;
-	}
-
-	.square {
-		-ms-grid-rows: 1fr;
-	}
-
-	.square .stripe {
-		-ms-grid-row: 1;
-		-ms-grid-columns: 1fr;
-	}
-
-	.square .stripe h4 {
-		-ms-grid-column: 1;
-		padding: 20px;
-		height: 30px;
-		width: 180px;
-	}
-
-	.square .stripe .diagonal {
-		display: none;
-	}
-
-	.bigSquare {
-		-ms-grid-rowspan: 1;
-		-ms-grid-rows: 1fr;
-	}
-	
-	.bigSquare .stripe .diagonal {
-		display: none;
-	}
-
-	.bigSquare .stripe h4 {
-		-ms-grid-column: 1;
-		padding: 20px;
-		height: 30px;
-		width: 180px;
 	}
 }
 

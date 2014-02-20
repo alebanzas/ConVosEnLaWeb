@@ -10,10 +10,10 @@
             var presentacion = document.getElementById("presentacion");
         	
 	        consejos.onclick = function () {
-	            nav.navigate("/pages/consejosNinos/consejosNinos.html", nav.state);
+	            nav.navigate("/pages/consejosNinos/consejosNinos.html?theme=ninos", nav.state);
             };
 	        vacaciones.onclick = function () {
-	            nav.navigate("/pages/vacaciones/vacaciones.html", nav.state);
+	            nav.navigate("/pages/vacaciones/vacaciones.html?theme=ninos", nav.state);
 	        };
             
 	        var header = document.querySelector(".ninos header[role=banner]");

@@ -10,6 +10,8 @@
             var padres = document.getElementById("padres");
             var docentes = document.getElementById("docentes");
             var presentacion = document.getElementById("presentacion");
+            var quienes = document.getElementById("quienes");
+            var video = document.getElementById("video");
         	
 	        ninos.onclick = function () {
 	            nav.navigate("/pages/ninos/ninos.html", nav.state);
@@ -19,13 +21,19 @@
             };
 	        padres.onclick = function () {
 	            nav.navigate("/pages/padres/padres.html", nav.state);
-            };
+	        };
 	        docentes.onclick = function () {
 	            nav.navigate("/pages/docentes/docentes.html", nav.state);
 	        };
-            
+	        quienes.onclick = function () {
+	            WinJS.UI.SettingsFlyout.show();
+	        };
+
+            video.play();
+
+
 	        var header = document.querySelector(".homepage header[role=banner]");
-	        enterAnimation([header], [ninos, padres], [adolescentes, docentes], [presentacion]);
+	        enterAnimation([header], [ninos, padres], [adolescentes, docentes], [presentacion, quienes]);
 	    },
     });
 

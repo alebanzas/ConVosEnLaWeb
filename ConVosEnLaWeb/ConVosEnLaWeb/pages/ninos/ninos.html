@@ -19,14 +19,19 @@
         <header aria-label="Header content" role="banner">
             <button data-win-control="WinJS.UI.BackButton"></button>
             <h1 class="titlearea win-type-ellipsis">
-                <span class="pagetitle">Con vos en la Web - Niños</span>
+                <span class="pagehometitle">
+                    Niños
+                </span>
+                <span class="pagelogo">
+                    <img src="/images/home/logo.png" style="height: 40px;" />
+                </span>
             </h1>
         </header>
         <section aria-label="Main content" role="main">
 	        <div id="scrollContainer">
 		        <div class="contentBox">
 		            
-                    <div id="consejos" class="square">
+                    <div id="consejos" class="wide">
                         <div class="backgroundImage">
                             <img src="/images/ninos/consejos.png" alt="" />
                         </div>
@@ -36,7 +41,7 @@
                         </div>
                     </div>
 		            
-                    <div id="vacaciones" class="square">
+                    <div id="vacaciones" class="wide">
                         <div class="backgroundImage">
                             <img src="/images/ninos/vacaciones.png" alt="" />
                         </div>
@@ -46,15 +51,15 @@
                         </div>
                     </div>
 
-		            <div id="presentacion" class="bigSquare">
-		                <div class="backgroundImage">
-		                    <img src="/images/ninos/presentacion.png" alt=""/>
-		                </div>
-		                <div class="stripe yellow">
-		                    <div class="diagonal"></div>
-		                    <h4 class="doble">Presentación</h4>    
-		                </div>
-		            </div>
+                    <div id="presentacion" class="bigSquare">
+                        <div style="display: table-cell; vertical-align: middle;">
+                            <video id="video"
+                                   src="/videos/ninos.mp4"
+                                   controls="controls"
+                                   style="width: 100%; height: 360px; background-color: rgb(8, 159, 171);"
+                                   poster="/images/home/poster-ninos.png"></video>
+                        </div>
+                    </div>
 
 		        </div>
             </div>

@@ -35,6 +35,11 @@
             args.setPromise(p);
         }
     });
+    
+    app.onsettings = function (e) {
+        e.detail.applicationcommands = { "about": { title: "¿Quíenes somos?", href: "/pages/quienes/quienes.html" } };
+        WinJS.UI.SettingsFlyout.populateSettings(e);
+    };
 
     app.oncheckpoint = function (args) {
         // TODO: This application is about to be suspended. Save any state
