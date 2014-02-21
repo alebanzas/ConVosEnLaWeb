@@ -26,22 +26,22 @@
 }
 
 .fragment.ninos header[role=banner],
-.fragment header[role=banner].ninos {
+body.ninos .fragment header[role=banner] {
     background-color: #C60D61;
 }
 
 .fragment.adolescentes header[role=banner],
-.fragment header[role=banner].adolescentes {
+body.adolescentes .fragment header[role=banner] {
     background-color: #576B9E;
 }
 
 .fragment.padres header[role=banner],
-.fragment header[role=banner].padres {
+body.padres .fragment header[role=banner] {
     background-color: #84AA2E;
 }
 
 .fragment.docentes header[role=banner],
-.fragment header[role=banner].docentes {
+body.docentes .fragment header[role=banner] {
     background-color: #754987;
 }
 

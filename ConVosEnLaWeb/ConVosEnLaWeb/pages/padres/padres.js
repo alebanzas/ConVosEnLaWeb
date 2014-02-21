@@ -11,17 +11,17 @@
             var guias = document.getElementById("guias");
             var presentacion = document.getElementById("presentacion");
         	
-	        amenazas.onclick = function () {
-	            nav.navigate("/pages/amenazas/amenazas.html?theme=padres", nav.state);
+            amenazas.onclick = function () {
+                nav.navigate("/pages/amenazas/amenazas.html", { theme: "padres" });
             };
 	        consejos.onclick = function () {
-	            nav.navigate("/pages/consejos/consejos.html?theme=padres", nav.state);
+	            nav.navigate("/pages/consejos/consejos.html", { theme: "padres" });
             };
 	        glosario.onclick = function () {
-	            nav.navigate("/pages/glosario/glosario.html?theme=padres", nav.state);
+	            nav.navigate("/pages/glosario/glosario.html", { theme: "padres" });
 	        };
 	        guias.onclick = function () {
-	            nav.navigate("/pages/guias/guias.html?theme=padres", nav.state);
+	            nav.navigate("/pages/guias/guias.html", { theme: "padres" });
 	        };
             
 	        var header = document.querySelector(".padres header[role=banner]");
