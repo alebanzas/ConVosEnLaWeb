@@ -26,7 +26,7 @@
 	            nav.navigate("/pages/docentes/docentes.html", nav.state);
 	        };
 	        quienes.onclick = function () {
-	            WinJS.UI.SettingsFlyout.show();
+	            WinJS.UI.SettingsFlyout.showSettings("about", "/pages/quienes/quienes.html");
 	        };
 
             video.play();
