@@ -9,11 +9,11 @@
             var vacaciones = document.getElementById("vacaciones");
             var presentacion = document.getElementById("presentacion");
         	
-	        consejos.onclick = function () {
-	            nav.navigate("/pages/consejosNinos/consejosNinos.html?theme=ninos", nav.state);
+            consejos.onclick = function () {
+	            nav.navigate("/pages/consejosNinos/consejosNinos.html", { theme: "ninos"});
             };
 	        vacaciones.onclick = function () {
-	            nav.navigate("/pages/vacaciones/vacaciones.html?theme=ninos", nav.state);
+	            nav.navigate("/pages/vacaciones/vacaciones.html", { theme: "ninos"});
 	        };
             
 	        var header = document.querySelector(".ninos header[role=banner]");

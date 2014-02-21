@@ -12,19 +12,19 @@
             var actividades = document.getElementById("actividades");
 
             amenazas.onclick = function () {
-                nav.navigate("/pages/amenazas/amenazas.html?theme=docentes", nav.state);
+                nav.navigate("/pages/amenazas/amenazas.html", { theme: "docentes" });
             };
             consejos.onclick = function () {
-                nav.navigate("/pages/consejos/consejos.html?theme=docentes", nav.state);
+                nav.navigate("/pages/consejos/consejos.html", { theme: "docentes" });
             };
             glosario.onclick = function () {
-                nav.navigate("/pages/glosario/glosario.html?theme=docentes", nav.state);
+                nav.navigate("/pages/glosario/glosario.html", { theme: "docentes" });
             };
             guias.onclick = function () {
-                nav.navigate("/pages/guias/guias.html?theme=docentes", nav.state);
+                nav.navigate("/pages/guias/guias.html", { theme: "docentes" });
             };
             actividades.onclick = function () {
-                nav.navigate("/pages/actividades/actividades.html?theme=docentes", nav.state);
+                nav.navigate("/pages/actividades/actividades.html", { theme: "docentes" });
             };
 	        
 	        var header = document.querySelector(".docentes header[role=banner]");
