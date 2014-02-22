@@ -62,6 +62,7 @@
     <Content Include="images\home\logo.png" />
     <Content Include="images\home\ninos.png" />
     <Content Include="images\home\padres.png" />
+    <Content Include="images\home\poster-cita.png" />
     <Content Include="images\home\poster-ninos.png" />
     <Content Include="images\home\poster.png" />
     <Content Include="images\home\quienes.png" />
@@ -136,6 +137,7 @@
     <Content Include="pages\home\home.css" />
     <Content Include="pages\home\home.html" />
     <Content Include="pages\home\home.js" />
+    <Content Include="videos\cita.mp4" />
     <Content Include="videos\ninos.mp4" />
     <Content Include="videos\presentacion.mp4" />
     <None Include="ConVosEnLaWeb_TemporaryKey.pfx" />
