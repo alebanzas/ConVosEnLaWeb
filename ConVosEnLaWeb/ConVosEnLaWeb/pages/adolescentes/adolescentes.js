@@ -7,21 +7,25 @@
         ready: function (element, options) {
             var amenazas = document.getElementById("amenazas");
             var consejos = document.getElementById("consejos");
+            var glosario = document.getElementById("glosario");
             var vacaciones = document.getElementById("vacaciones");
             var presentacion = document.getElementById("presentacion");
         	
 	        amenazas.onclick = function () {
 	            nav.navigate("/pages/amenazas/amenazas.html", { theme: "adolescentes" });
-            };
+	        };
 	        consejos.onclick = function () {
-	            nav.navigate("/pages/consejos/consejos.html", { theme: "adolescentes" });
-            };
+	            nav.navigate("/pages/splitdata/splitdata.html", { theme: "adolescentes", data: "consejos", title: "consejos" });
+	        };
+	        glosario.onclick = function () {
+	            nav.navigate("/pages/splitdata/splitdata.html", { theme: "adolescentes", data: "glosario", title: "glosario" });
+	        };
 	        vacaciones.onclick = function () {
 	            nav.navigate("/pages/vacaciones/vacaciones.html", { theme: "adolescentes" });
 	        };
             
 	        var header = document.querySelector(".adolescentes header[role=banner]");
-	        enterAnimation([header], [amenazas, consejos], [vacaciones], [presentacion]);
+	        enterAnimation([header], [amenazas, consejos], [glosario, vacaciones], [presentacion]);
 	    },
     });
 

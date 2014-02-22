@@ -15,10 +15,10 @@
                 nav.navigate("/pages/amenazas/amenazas.html", { theme: "padres" });
             };
 	        consejos.onclick = function () {
-	            nav.navigate("/pages/consejos/consejos.html", { theme: "padres" });
+	            nav.navigate("/pages/splitdata/splitdata.html", { theme: "padres", data: "consejos", title: "consejos" });
             };
 	        glosario.onclick = function () {
-	            nav.navigate("/pages/glosario/glosario.html", { theme: "padres" });
+	            nav.navigate("/pages/splitdata/splitdata.html", { theme: "padres", data: "glosario", title: "glosario" });
 	        };
 	        guias.onclick = function () {
 	            nav.navigate("/pages/guias/guias.html", { theme: "padres" });
