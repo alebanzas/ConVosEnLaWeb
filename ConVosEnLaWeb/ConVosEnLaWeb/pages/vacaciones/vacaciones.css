@@ -1,4 +1,28 @@
-﻿
+﻿.fragment.vacaciones section[role=main] .contentBox {
+    background-color: rgba(255,255,255, 0.9);
+    margin-top: 20px;
+    width: calc(100% - 150px);
+    padding: 10px 40px 40px 40px;
+}
+
+.fragment.vacaciones #scrollContainer {
+    overflow-y: scroll;
+}
+
+.fragment.vacaciones section[role=main] .contentBox h3 {
+    padding-bottom: 30px;
+    padding-left: 30px;
+    color: black;
+}
+
+body.ninos .fragment.vacaciones section[role=main] .contentBox {
+	color: #DC1070;
+}
+
+body.adolescentes .fragment.vacaciones section[role=main] .contentBox {
+	color: #657EBD;
+}
+
 
 @media screen and (-ms-view-state: snapped) {
 
