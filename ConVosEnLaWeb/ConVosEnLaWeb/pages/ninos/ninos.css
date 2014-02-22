@@ -3,17 +3,23 @@
 .fragment.ninos .contentBox {
 	display: -ms-grid;
 	-ms-grid-rows: 270px 270px;
-	-ms-grid-columns: 540px 540px 120px; /* La última columna es sólo margen */
+	-ms-grid-columns: 370px 710px 120px; /* La última columna es sólo margen */
 }
 
 .fragment.ninos #consejos {
 	-ms-grid-row: 1;
 	-ms-grid-column: 1;
+    width: 350px;
 }
 
 .fragment.ninos #vacaciones {
 	-ms-grid-row: 2;
 	-ms-grid-column: 1;
+    width: 350px;
+}
+
+.fragment.ninos .stripe {
+    margin-left: 130px;
 }
 
 .fragment.ninos #presentacion {

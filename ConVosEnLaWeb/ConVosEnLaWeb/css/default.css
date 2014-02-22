@@ -45,6 +45,24 @@ body.docentes .fragment header[role=banner] {
     background-color: #754987;
 }
 
+.naranja {
+    background-color: #E87F00;
+}
+.rosa {
+    background-color: #C60D61;
+}
+.azul {
+    background-color: #576B9E;
+}
+.verde {
+    background-color: #84AA2E;
+}
+.violeta {
+    background-color: #754987;
+}
+.celeste {
+    background-color: rgb(8, 159, 171);
+}
 
 .fragment header[role=banner] .win-navigation-backbutton {
     -ms-grid-column: 2;
@@ -190,6 +208,54 @@ body.docentes .fragment header[role=banner] {
     color: #FFFFFF;
 }
 
+.square#ninos .stripe h4,
+.square.rosa .stripe h4 {
+	background-color: #DC1070;
+}
+
+.square#adolescentes .stripe h4,
+.square.azul .stripe h4 {
+	background-color: #657EBD;
+}
+
+.square#padres .stripe h4,
+.square.verde .stripe h4 {
+	background-color: #99C639;
+}
+
+.square#docentes .stripe h4,
+.square.violeta .stripe h4 {
+	background-color: #88579F;
+}
+
+.midSquare#quienes .stripe h4 {
+	background-color: #02ACB8;
+}
+
+.square#ninos .stripe .diagonal,
+.square.rosa .stripe .diagonal {
+	border-right: 20px solid #DC1070;
+}
+
+.square#adolescentes .stripe .diagonal,
+.square.azul .stripe .diagonal {
+	border-right: 20px solid #657EBD;
+}
+
+.square#padres .stripe .diagonal,
+.square.verde .stripe .diagonal {
+	border-right: 20px solid #99C639;
+}
+
+.square#docentes .stripe .diagonal,
+.square.violeta .stripe .diagonal {
+	border-right: 20px solid #88579F;
+}
+
+.midSquare#quienes .stripe .diagonal,
+.midSquare.celeste .stripe .diagonal {
+	border-right: 20px solid #02ACB8;
+}
 
 
 @media screen and (-ms-view-state: snapped) {
