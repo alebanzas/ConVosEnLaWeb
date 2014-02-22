@@ -1,0 +1,127 @@
+﻿.splitdata.fragment section[role=main] {
+    -ms-grid-columns: 120px 300px calc(100% - 450px);
+    -ms-grid-rows: 1fr;
+    display: -ms-grid;
+    padding-top: 20px;
+}
+
+.splitdata .itemlistsection {
+    -ms-grid-column: 2;
+    -ms-grid-row: 1;
+}
+
+.splitdata .itemlistsection .itemlist {
+    height: 100%;
+    position: relative;
+    width: 100%;
+    z-index: 0;
+}
+
+.splitdata .itemlistsection .itemlist .win-vertical.win-viewport .win-surface { margin-bottom: 60px; }
+
+.splitdata .itemlistsection .itemlist .win-vertical.win-viewport .win-surface .win-itemsblock { overflow: visible; }
+
+.splitdata .itemlistsection .itemlist .win-container {
+    margin-bottom: 16px;
+    margin-top: 5px;
+    width: calc(100% - 28px);
+}
+
+.splitdata .itemlistsection .itemlist .win-container .win-selectioncheckmark, .splitdata .itemlistsection .itemlist .win-container .win-selectioncheckmarkbackground { display: none; }
+
+.splitdata .itemlistsection .itemlist .item {
+    -ms-grid-columns: 60px 10px 1fr;
+    -ms-grid-rows: 1fr;
+    display: -ms-grid;
+    height: 60px;
+    padding: 7px;
+}
+
+.splitdata .itemlistsection .itemlist .item .item-image {
+    height: 60px;
+    width: 60px;
+}
+
+.splitdata .itemlistsection .itemlist .item .item-info {
+    -ms-grid-column: 3;
+    overflow: hidden;
+}
+
+.splitdata .itemlistsection .itemlist .item .item-info .item-title {
+    margin-bottom: 1px;
+    margin-top: 4px;
+}
+
+.splitdata .itemlistsection .itemlist .item .item-info .item-subtitle { opacity: 0.6; }
+
+.splitdata .itemlistsection .itemlist .item .item-info .item-description {
+    max-height: 60px;
+    overflow: hidden;
+}
+
+body.ninos .splitdata .win-listview .win-itembox, .win-itemcontainer .win-itembox,
+body.ninos .splitdata .articlesection {
+    background-color: rgba(198, 13, 97, 0.7);
+}
+body.ninos .splitdata .win-selectionstylefilled.win-listview .win-selected .win-selectionbackground, .win-selected.win-selectionstylefilled.win-itemcontainer .win-selectionbackground{
+    background-color: rgba(198, 13, 97, 1);
+}
+
+body.adolescentes .splitdata .win-listview .win-itembox, .win-itemcontainer .win-itembox,
+body.adolescentes .splitdata .articlesection {
+    background-color: rgba(87, 107, 158, 0.7);
+}
+body.adolescentes .splitdata .win-selectionstylefilled.win-listview .win-selected .win-selectionbackground, .win-selected.win-selectionstylefilled.win-itemcontainer .win-selectionbackground{
+    background-color: rgba(87, 107, 158, 1);
+}
+
+body.padres .splitdata .win-listview .win-itembox, .win-itemcontainer .win-itembox,
+body.padres .splitdata .articlesection {
+    background-color: rgba(132, 170, 46, 0.7);
+}
+body.padres .splitdata .win-selectionstylefilled.win-listview .win-selected .win-selectionbackground, .win-selected.win-selectionstylefilled.win-itemcontainer .win-selectionbackground{
+    background-color: rgba(132, 170, 46, 1);
+}
+
+body.docentes .splitdata .win-listview .win-itembox, .win-itemcontainer .win-itembox,
+body.docentes .splitdata .articlesection {
+    background-color: rgba(117, 73, 135, 0.7);
+}
+body.docentes .splitdata .win-selectionstylefilled.win-listview .win-selected .win-selectionbackground, .win-selected.win-selectionstylefilled.win-itemcontainer .win-selectionbackground{
+    background-color: rgba(117, 73, 135, 1);
+}
+
+.splitdata .articlesection {
+    -ms-grid-column: 3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    height: calc(100% - 50px);
+    overflow-y: auto;
+    padding-left: 60px;
+    padding-right: 66px;
+    position: relative;
+    z-index: 0;
+}
+
+.splitdata .articlesection header {
+    -ms-grid-columns: 180px 20px 1fr;
+    -ms-grid-rows: 180px;
+    display: -ms-grid;
+    margin-bottom: 20px;
+}
+
+.splitdata .articlesection header .text { -ms-grid-column: 3; }
+
+.splitdata .articlesection header .text .article-subtitle { margin-top: 4px; }
+
+.splitdata .articlesection header .article-image {
+    height: 180px;
+    width: 180px;
+}
+
+.splitdata .articlesection .article-content { overflow-y: auto; }
+
+.splitdata .articlesection .article-content p {
+    margin-bottom: 16pt;
+    margin-top: 0;
+}

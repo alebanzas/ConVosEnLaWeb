@@ -15,10 +15,10 @@
                 nav.navigate("/pages/amenazas/amenazas.html", { theme: "docentes" });
             };
             consejos.onclick = function () {
-                nav.navigate("/pages/consejos/consejos.html", { theme: "docentes" });
+                nav.navigate("/pages/splitdata/splitdata.html", { theme: "docentes", data: "consejos", title: "consejos" });
             };
             glosario.onclick = function () {
-                nav.navigate("/pages/glosario/glosario.html", { theme: "docentes" });
+                nav.navigate("/pages/splitdata/splitdata.html", { theme: "docentes", data: "glosario", title: "glosario" });
             };
             guias.onclick = function () {
                 nav.navigate("/pages/guias/guias.html", { theme: "docentes" });
