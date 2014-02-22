@@ -1,45 +1,99 @@
-﻿/* Layout */
+﻿.adolescentes section[role=main] {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+}
 
-#amenazas {
+#scrollContainer {
+	height: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -ms-overflow-style: scroll;
+	padding-left: 120px;
+}
+
+.fragment.adolescentes .contentBox {
+	display: -ms-grid;
+	-ms-grid-rows: 270px 270px;
+	-ms-grid-columns: 270px 270px 540px 120px; /* La última columna es sólo margen */
+}
+
+.fragment.adolescentes .stripe {
+    width: 250px;
+}
+
+/* Esta truchada está para que tenga margen a la derecha, sino no me daba bola */
+.contentBox:after {
+	-ms-grid-column: 6;
+	content: '';
+	display: block;
+}
+
+.contentBox h4 {
+	font-size: 14pt;
+	font-weight: bold;
+	text-align: right;
+}
+
+/* Layout */
+
+.fragment.adolescentes #amenazas {
 	-ms-grid-row: 1;
 	-ms-grid-column: 1;
 }
 
-#consejos {
+.fragment.adolescentes #consejos {
+	-ms-grid-row: 1;
+	-ms-grid-column: 2;
+}
+
+.fragment.adolescentes #glosario {
 	-ms-grid-row: 2;
 	-ms-grid-column: 1;
 }
 
-#vacaciones {
+.fragment.adolescentes #vacaciones {
 	-ms-grid-row: 2;
 	-ms-grid-column: 2;
 }
 
-#presentacion {
+.fragment.adolescentes #vacaciones h4 {
+    font-size: 17px;
+    line-height: 30px;
+}
+
+.fragment.adolescentes #presentacion {
 	-ms-grid-row: 1;
 	-ms-grid-column: 3;
+    background-color: #089FAB;
+    height: 520px;
 }
+
 
 @media screen and (-ms-view-state: snapped) {
 
 	/* Layout */
 
-	#presentacion {
+	.fragment.adolescentes #presentacion {
 		-ms-grid-row: 1;
 		-ms-grid-column: 1;
 	}
 
-	#amenazas {
+	.fragment.adolescentes #amenazas {
 		-ms-grid-row: 2;
 		-ms-grid-column: 1;
 	}
 
-	#consejos {
+	.fragment.adolescentes #consejos {
+		-ms-grid-row: 3;
+		-ms-grid-column: 1;
+	}
+
+	.fragment.adolescentes #glosario {
 		-ms-grid-row: 4;
 		-ms-grid-column: 1;
 	}
 
-	#vacaciones {
+	.fragment.adolescentes #vacaciones {
 		-ms-grid-row: 5;
 		-ms-grid-column: 1;
 	}
