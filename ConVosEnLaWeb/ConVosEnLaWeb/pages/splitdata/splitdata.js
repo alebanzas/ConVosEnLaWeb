@@ -73,12 +73,12 @@
                     // If the app has snapped into a single-column detail view,
                     // add the single-column list view to the backstack.
                     nav.history.current.state = {
-                        groupKey: this._group.key,
+                        data: this._group.key,
                         selectedIndex: this._itemSelectionIndex
                     };
                     nav.history.backStack.push({
                         location: "/pages/splitdata/splitdata.html",
-                        state: { groupKey: this._group.key }
+                        state: { data: this._group.key }
                     });
                     element.querySelector(".articlesection").focus();
                 } else {
@@ -123,7 +123,7 @@
                         // If snapped or portrait, navigate to a new page containing the
                         // selected item's details.
                         setImmediate(function () {
-                            nav.navigate("/pages/splitdata/splitdata.html", { groupKey: this._group.key, selectedIndex: this._itemSelectionIndex });
+                            nav.navigate("/pages/splitdata/splitdata.html", { data: this._group.key, selectedIndex: this._itemSelectionIndex });
                         }.bind(this));
                     } else {
                         // If fullscreen or filled, update the details column with new data.
