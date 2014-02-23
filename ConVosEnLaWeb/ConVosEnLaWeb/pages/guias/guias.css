@@ -1,4 +1,56 @@
-﻿
+﻿/* Layout */
+
+.fragment.guias .contentBox {
+	display: -ms-grid;
+	-ms-grid-rows: 270px 270px;
+	-ms-grid-columns: 520px 520px 120px; /* La última columna es sólo margen */
+}
+
+.fragment.guias .guia {
+    background-color: #FFFFFF;
+    color: #000000;
+    margin: 10px;
+    display: -ms-grid;
+	-ms-grid-columns: 172px 1fr; 
+}
+
+.fragment.guias .guia img {
+	-ms-grid-column: 1;
+    margin: 30px 20px;
+}
+.fragment.guias .guia div {
+    padding-top: 15px;
+	-ms-grid-column: 2;
+}
+.fragment.guias .guia h2 {
+    font-size: 20px;
+}
+.fragment.guias .guia h3 {
+    font-size: 14px;
+}
+.fragment.guias .guia p {
+    color: #777777;
+    font-size: 11px;
+}
+
+.fragment.guias #guia1 {
+	-ms-grid-row: 1;
+	-ms-grid-column: 1;
+}
+.fragment.guias #guia2 {
+	-ms-grid-row: 1;
+	-ms-grid-column: 2;
+}
+.fragment.guias #guia3 {
+	-ms-grid-row: 2;
+	-ms-grid-column: 1;
+}
+.fragment.guias #guia4 {
+	-ms-grid-row: 2;
+	-ms-grid-column: 2;
+}
+
+
 
 @media screen and (-ms-view-state: snapped) {
 
