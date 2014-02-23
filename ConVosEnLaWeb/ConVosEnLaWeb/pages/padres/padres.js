@@ -12,7 +12,7 @@
             var presentacion = document.getElementById("presentacion");
         	
             amenazas.onclick = function () {
-                nav.navigate("/pages/amenazas/amenazas.html", { theme: "padres" });
+                nav.navigate("/pages/splitdata/splitdata.html", { theme: "padres", data: "amenazas", title: "amenazas" });
             };
 	        consejos.onclick = function () {
 	            nav.navigate("/pages/splitdata/splitdata.html", { theme: "padres", data: "consejos", title: "consejos" });

@@ -54,7 +54,8 @@
         var groups = [
             { key: "ninos", title: "Consejos", subtitle: "", backgroundImage: "" },
             { key: "consejos", title: "Consejos", subtitle: "", backgroundImage: "" },
-            { key: "glosario", title: "Glosario", subtitle: "", backgroundImage: "" }
+            { key: "glosario", title: "Glosario", subtitle: "", backgroundImage: "" },
+            { key: "amenazas", title: "Amenazas", subtitle: "", backgroundImage: "" }
         ];
 
         var items = [
@@ -62,7 +63,9 @@
 
             { group: groups[1], title: "Item Title: 1", subtitle: "Item Subtitle: 1", content: "", backgroundImage: "" },
 
-            { group: groups[2], title: "Item Title: 1", subtitle: "Item Subtitle: 1", content: "", backgroundImage: "" }
+            { group: groups[2], title: "Item Title: 1", subtitle: "Item Subtitle: 1", content: "", backgroundImage: "" },
+
+            { group: groups[3], title: "Item Title: 1", subtitle: "Item Subtitle: 1", content: "", backgroundImage: "" }
         ];
 
         return items;

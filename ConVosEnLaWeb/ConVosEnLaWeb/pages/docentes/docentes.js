@@ -12,7 +12,7 @@
             var actividades = document.getElementById("actividades");
 
             amenazas.onclick = function () {
-                nav.navigate("/pages/amenazas/amenazas.html", { theme: "docentes" });
+                nav.navigate("/pages/splitdata/splitdata.html", { theme: "docentes", data: "amenazas", title: "amenazas" });
             };
             consejos.onclick = function () {
                 nav.navigate("/pages/splitdata/splitdata.html", { theme: "docentes", data: "consejos", title: "consejos" });
