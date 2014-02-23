@@ -1,58 +1,74 @@
 ﻿/* Layout */
 
-#amenazas {
+.fragment.padres .contentBox {
+	display: -ms-grid;
+	-ms-grid-rows: 270px 270px;
+	-ms-grid-columns: 270px 470px 270px 120px; /* La última columna es sólo margen */
+}
+
+.fragment.padres .widebox {
+    width: 450px;
+	height: 520px;
+    margin: 10px;
+}
+
+.fragment.padres .widebox p {
+    padding: 15px;
+}
+
+.fragment.padres .stripe {
+    margin-left: 30px;
+}
+
+.fragment.padres #amenazas {
 	-ms-grid-row: 1;
 	-ms-grid-column: 1;
 }
 
-#consejos {
-	-ms-grid-row: 1;
-	-ms-grid-column: 2;
-}
-
-#glosario {
-	-ms-grid-row: 2;
-	-ms-grid-column: 1;
-}
-
-#guias {
-	-ms-grid-row: 2;
-	-ms-grid-column: 2;
-}
-
-#presentacion {
+.fragment.padres #consejos {
 	-ms-grid-row: 1;
 	-ms-grid-column: 3;
+}
+
+.fragment.padres #glosario {
+	-ms-grid-row: 2;
+	-ms-grid-column: 1;
+}
+
+.fragment.padres #guias {
+	-ms-grid-row: 2;
+	-ms-grid-column: 3;
+}
+
+.fragment.padres #descripcion {
+	-ms-grid-row: 1;
+	-ms-grid-column: 2;
 }
 
 @media screen and (-ms-view-state: snapped) {
 
 	/* Layout */
 
-	#presentacion {
-		-ms-grid-row: 1;
-		-ms-grid-column: 1;
-	}
+	.fragment.padres #amenazas {
+	    -ms-grid-row: 1;
+	    -ms-grid-column: 1;
+    }
 
-	#amenazas {
-		-ms-grid-row: 2;
-		-ms-grid-column: 1;
-	}
+    .fragment.padres #consejos {
+	    -ms-grid-row: 2;
+	    -ms-grid-column: 1;
+    }
 
-	#consejos {
-		-ms-grid-row: 3;
-		-ms-grid-column: 1;
-	}
+    .fragment.padres #glosario {
+	    -ms-grid-row: 3;
+	    -ms-grid-column: 1;
+    }
 
-	#glosario {
-		-ms-grid-row: 4;
-		-ms-grid-column: 1;
-	}
-
-	#guias {
-		-ms-grid-row: 5;
-		-ms-grid-column: 1;
-	}
+    .fragment.padres #guias {
+	    -ms-grid-row: 4;
+	    -ms-grid-column: 1;
+    }
+    
 }
 
 @media screen and (-ms-view-state: fullscreen-portrait) {
