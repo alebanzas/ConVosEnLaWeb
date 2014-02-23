@@ -78,6 +78,9 @@
     <Content Include="images\data\cvelw_amenazas_tabjacking.png" />
     <Content Include="images\data\cvelw_amenazas_troyanos.png" />
     <Content Include="images\data\cvelw_amenazas_virus.png" />
+    <Content Include="images\data\cvelw_glosario_bluetooth.jpg" />
+    <Content Include="images\data\cvelw_glosario_geolocalizacion.jpg" />
+    <Content Include="images\data\cvelw_glosario_realidad_aumentada.jpg" />
     <Content Include="images\data\seguridad-android.png" />
     <Content Include="images\fondo_home.jpg" />
     <Content Include="images\guias\tapaamenazas-01_131x185.jpg" />
