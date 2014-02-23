@@ -10,7 +10,7 @@
             var presentacion = document.getElementById("presentacion");
         	
             consejos.onclick = function () {
-                nav.navigate("/pages/splitdata/splitdata.html", { theme: "ninos", data: "ninos", title: "consejos" });
+                nav.navigate("/pages/splitdata/splitdata.html", { theme: "ninos", data: "ninos", title: "consejos", template: "itemtemplate2" });
             };
 	        vacaciones.onclick = function () {
 	            nav.navigate("/pages/vacaciones/vacaciones.html", { theme: "ninos"});

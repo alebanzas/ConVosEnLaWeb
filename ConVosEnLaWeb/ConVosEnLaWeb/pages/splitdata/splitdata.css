@@ -59,6 +59,28 @@
     overflow: hidden;
 }
 
+
+.splitdata .itemlistsection .itemlist .item2 {
+    -ms-grid-rows: 1fr;
+    display: -ms-grid;
+    height: 60px;
+    padding: 7px;
+}
+.splitdata .itemlistsection .itemlist .item .item-title,
+.splitdata .itemlistsection .itemlist .item2 .item-title {
+    white-space: normal;
+}
+.splitdata .articlesection.itemtemplate2 .article-image{
+    display: none;
+}
+.splitdata .articlesection.itemtemplate2 header {
+    -ms-grid-columns: 1fr;
+    -ms-grid-rows: auto;
+    display: -ms-grid;
+    margin-bottom: 20px;
+}
+
+
 body.ninos .splitdata .win-listview .win-itembox, .win-itemcontainer .win-itembox,
 body.ninos .splitdata .articlesection {
     background-color: rgba(198, 13, 97, 0.7);
@@ -115,8 +137,8 @@ body.docentes .splitdata .win-selectionstylefilled.win-listview .win-selected .w
 .splitdata .articlesection header .text .article-subtitle { margin-top: 4px; }
 
 .splitdata .articlesection header .article-image {
-    height: 180px;
-    width: 180px;
+    height: 140px;
+    width: 140px;
 }
 
 .splitdata .articlesection .article-content { overflow-y: auto; }

@@ -32,6 +32,14 @@
             WinJS.Utilities.addClass(document.getElementsByTagName("body")[0], theme);
             element.querySelector(".pagehometitle").innerText = options.title;
             
+            var listView = element.querySelector(".itemlist").winControl;
+            if (options.template) {
+                listView.itemTemplate = element.querySelector("." + options.template);
+                WinJS.Utilities.addClass(element.querySelector(".articlesection"), options.template);
+            } else {
+                listView.itemTemplate = element.querySelector(".itemtemplate");
+            }
+
             this._updateVisibility(element);
             if (this._isSingleColumn()) {
                 this._wasSingleColumn = true;
@@ -42,7 +50,6 @@
             } else {
                 // If this page has a selectionIndex, make that selection
                 // appear in the ListView.
-                var listView = element.querySelector(".itemlist").winControl;
                 listView.selection.set(Math.max(this._itemSelectionIndex, 0));
             }
         },
