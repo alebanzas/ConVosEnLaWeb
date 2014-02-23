@@ -56,6 +56,14 @@
       <SubType>Designer</SubType>
     </AppxManifest>
     <Content Include="default.html" />
+    <Content Include="files\cvelw_actividad_adolescentes.pdf" />
+    <Content Include="files\cvelw_actividad_adolescentes3.pdf" />
+    <Content Include="files\cvelw_actividad_ninios3.pdf" />
+    <Content Include="files\cvelw_actividad_ninos.pdf" />
+    <Content Include="images\actividades\cvelw_banner_actividades.png" />
+    <Content Include="images\actividades\cvelw_banner_actividades_teen.png" />
+    <Content Include="images\actividades\cvelw_banner_circulos.png" />
+    <Content Include="images\actividades\cvelw_banner_crucigrama.png" />
     <Content Include="images\fondo_home.jpg" />
     <Content Include="images\home\adolescentes.png" />
     <Content Include="images\home\docentes.png" />
@@ -106,6 +114,9 @@
     <Content Include="js\default.js" />
     <Content Include="css\default.css" />
     <Content Include="js\navigator.js" />
+    <Content Include="pages\actividades\actividades.css" />
+    <Content Include="pages\actividades\actividades.html" />
+    <Content Include="pages\actividades\actividades.js" />
     <Content Include="pages\quienes\quienes.html" />
     <Content Include="pages\guias\guias.css" />
     <Content Include="pages\guias\guias.html" />
@@ -116,9 +127,6 @@
     <Content Include="pages\splitdata\splitdata.css" />
     <Content Include="pages\splitdata\splitdata.html" />
     <Content Include="pages\splitdata\splitdata.js" />
-    <Content Include="pages\actividades\actividades.css" />
-    <Content Include="pages\actividades\actividades.html" />
-    <Content Include="pages\actividades\actividades.js" />
     <Content Include="pages\padres\padres.css" />
     <Content Include="pages\padres\padres.html" />
     <Content Include="pages\padres\padres.js" />
