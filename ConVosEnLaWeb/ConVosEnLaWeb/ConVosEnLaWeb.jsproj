@@ -68,6 +68,17 @@
     <Content Include="images\actividades\cvelw_banner_actividades_teen.png" />
     <Content Include="images\actividades\cvelw_banner_circulos.png" />
     <Content Include="images\actividades\cvelw_banner_crucigrama.png" />
+    <Content Include="images\data\cvelw_amenazas_botnet.png" />
+    <Content Include="images\data\cvelw_amenazas_gusanos.png" />
+    <Content Include="images\data\cvelw_amenazas_keyloggers.png" />
+    <Content Include="images\data\cvelw_amenazas_pharming.png" />
+    <Content Include="images\data\cvelw_amenazas_phishing.png" />
+    <Content Include="images\data\cvelw_amenazas_rootkits.png" />
+    <Content Include="images\data\cvelw_amenazas_sidejacking.png" />
+    <Content Include="images\data\cvelw_amenazas_tabjacking.png" />
+    <Content Include="images\data\cvelw_amenazas_troyanos.png" />
+    <Content Include="images\data\cvelw_amenazas_virus.png" />
+    <Content Include="images\data\seguridad-android.png" />
     <Content Include="images\fondo_home.jpg" />
     <Content Include="images\guias\tapaamenazas-01_131x185.jpg" />
     <Content Include="images\guias\tapaglosario-01_131x185.jpg" />
