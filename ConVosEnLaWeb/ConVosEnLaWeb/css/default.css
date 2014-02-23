@@ -228,7 +228,8 @@ body.docentes .fragment header[role=banner] {
 	background-color: #88579F;
 }
 
-.midSquare#quienes .stripe h4 {
+.midSquare#quienes .stripe h4,
+.square.celeste .stripe h4  {
 	background-color: #02ACB8;
 }
 
@@ -253,7 +254,7 @@ body.docentes .fragment header[role=banner] {
 }
 
 .midSquare#quienes .stripe .diagonal,
-.midSquare.celeste .stripe .diagonal {
+.square.celeste .stripe .diagonal {
 	border-right: 20px solid #02ACB8;
 }
 

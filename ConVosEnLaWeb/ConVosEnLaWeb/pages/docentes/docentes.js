@@ -9,6 +9,7 @@
             var consejos = document.getElementById("consejos");
             var glosario = document.getElementById("glosario");
             var guias = document.getElementById("guias");
+            var descripcion = document.getElementById("descripcion");
             var actividades = document.getElementById("actividades");
 
             amenazas.onclick = function () {
@@ -28,7 +29,7 @@
             };
 	        
 	        var header = document.querySelector(".docentes header[role=banner]");
-	        enterAnimation([header], [amenazas, consejos], [glosario, guias], [actividades]);
+	        enterAnimation([header], [amenazas, glosario], [consejos, guias], [descripcion, actividades]);
 	    },
     });
 
