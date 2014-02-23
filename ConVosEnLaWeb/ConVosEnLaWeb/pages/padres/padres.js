@@ -9,23 +9,23 @@
             var consejos = document.getElementById("consejos");
             var glosario = document.getElementById("glosario");
             var guias = document.getElementById("guias");
-            var presentacion = document.getElementById("presentacion");
-        	
+            var descripcion = document.getElementById("descripcion");
+
             amenazas.onclick = function () {
                 nav.navigate("/pages/splitdata/splitdata.html", { theme: "padres", data: "amenazas", title: "amenazas" });
             };
-	        consejos.onclick = function () {
-	            nav.navigate("/pages/splitdata/splitdata.html", { theme: "padres", data: "consejos", title: "consejos" });
+            consejos.onclick = function () {
+                nav.navigate("/pages/splitdata/splitdata.html", { theme: "padres", data: "consejos", title: "consejos" });
             };
-	        glosario.onclick = function () {
-	            nav.navigate("/pages/splitdata/splitdata.html", { theme: "padres", data: "glosario", title: "glosario" });
-	        };
-	        guias.onclick = function () {
-	            nav.navigate("/pages/guias/guias.html", { theme: "padres" });
-	        };
-            
+            glosario.onclick = function () {
+                nav.navigate("/pages/splitdata/splitdata.html", { theme: "padres", data: "glosario", title: "glosario" });
+            };
+            guias.onclick = function () {
+                nav.navigate("/pages/guias/guias.html", { theme: "padres" });
+            };
+
 	        var header = document.querySelector(".padres header[role=banner]");
-	        enterAnimation([header], [amenazas, glosario], [consejos, guias], [presentacion]);
+	        enterAnimation([header], [amenazas, glosario], [descripcion], [consejos, guias]);
 	    },
     });
 
