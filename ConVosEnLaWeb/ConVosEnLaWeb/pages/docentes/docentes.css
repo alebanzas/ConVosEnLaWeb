@@ -1,27 +1,59 @@
 ﻿/* Layout */
 
-#amenazas {
+.fragment.docentes .contentBox {
+	display: -ms-grid;
+	-ms-grid-rows: 270px 270px;
+	-ms-grid-columns: 270px 270px 470px 120px; /* La última columna es sólo margen */
+}
+
+.fragment.docentes .widebox {
+    width: 470px;
+	height: 250px;
+    margin: 10px;
+}
+.fragment.docentes .widebox.naranja {
+    background-color: orange;
+}
+
+.fragment.docentes #actividades .stripe h4 {
+    width: 400px;
+}
+
+.fragment.docentes .widebox p {
+    padding: 15px;
+}
+
+.fragment.docentes .stripe {
+    margin-left: 30px;
+}
+
+.fragment.docentes #amenazas {
 	-ms-grid-row: 1;
 	-ms-grid-column: 1;
 }
 
-#consejos {
+.fragment.docentes #consejos {
 	-ms-grid-row: 1;
 	-ms-grid-column: 2;
 }
 
-#glosario {
+.fragment.docentes #glosario {
 	-ms-grid-row: 2;
 	-ms-grid-column: 1;
 }
 
-#guias {
+.fragment.docentes #guias {
 	-ms-grid-row: 2;
 	-ms-grid-column: 2;
 }
 
-#actividades {
+.fragment.docentes #descripcion {
 	-ms-grid-row: 1;
+	-ms-grid-column: 3;
+}
+
+.fragment.docentes #actividades {
+	-ms-grid-row: 2;
 	-ms-grid-column: 3;
 }
 
@@ -29,27 +61,27 @@
 
 	/* Layout */
 
-	#amenazas {
+	.fragment.docentes #amenazas {
 	    -ms-grid-row: 1;
 	    -ms-grid-column: 1;
     }
 
-    #consejos {
+    .fragment.docentes #consejos {
 	    -ms-grid-row: 2;
 	    -ms-grid-column: 1;
     }
 
-    #glosario {
+    .fragment.docentes #glosario {
 	    -ms-grid-row: 3;
 	    -ms-grid-column: 1;
     }
 
-    #guias {
+    .fragment.docentes #guias {
 	    -ms-grid-row: 4;
 	    -ms-grid-column: 1;
     }
 
-    #actividades {
+    .fragment.docentes #actividades {
 	    -ms-grid-row: 5;
 	    -ms-grid-column: 1;
     }
