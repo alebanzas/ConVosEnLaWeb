@@ -143,6 +143,11 @@ body.docentes .splitdata .win-selectionstylefilled.win-listview .win-selected .w
 
 .splitdata .articlesection .article-content { overflow-y: auto; }
 
+.splitdata .articlesection .article-content h1,
+.splitdata .articlesection .article-content h2,
+.splitdata .articlesection .article-content h3,
+.splitdata .articlesection .article-content h4 { font-weight: bold; }
+
 .splitdata .articlesection .article-content p {
     margin-bottom: 16pt;
     margin-top: 0;

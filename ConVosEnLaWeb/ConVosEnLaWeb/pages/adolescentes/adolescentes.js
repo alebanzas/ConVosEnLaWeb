@@ -15,10 +15,10 @@
 	            nav.navigate("/pages/splitdata/splitdata.html", { theme: "adolescentes", data: "amenazas", title: "amenazas" });
 	        };
 	        consejos.onclick = function () {
-	            nav.navigate("/pages/splitdata/splitdata.html", { theme: "adolescentes", data: "consejos", title: "consejos" });
+	            nav.navigate("/pages/splitdata/splitdata.html", { theme: "adolescentes", data: "consejos", title: "consejos", template: "itemtemplate2" });
 	        };
 	        glosario.onclick = function () {
-	            nav.navigate("/pages/splitdata/splitdata.html", { theme: "adolescentes", data: "glosario", title: "glosario" });
+	            nav.navigate("/pages/splitdata/splitdata.html", { theme: "adolescentes", data: "glosario", title: "glosario", template: "itemtemplate2" });
 	        };
 	        vacaciones.onclick = function () {
 	            nav.navigate("/pages/vacaciones/vacaciones.html", { theme: "adolescentes" });
