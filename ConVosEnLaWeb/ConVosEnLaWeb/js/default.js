@@ -49,5 +49,20 @@
         app.sessionState.history = nav.history;
     };
 
+    app.onerror = function (e) {
+
+        var dialog = new Windows.UI.Popups.MessageDialog(
+            "Detalle: " + (e.detail.errorMessage ? e.detail.errorMessage : (e.detail.error ? e.detail.error : "desconocido.")), "Ups. Se produjo un error.");
+
+        WinJS.Navigation.navigate("/pages/home/home.html", nav.state);
+
+        try {
+            dialog.showAsync().done();
+        } catch (ee) {
+
+        }
+        return true;
+    };
+
     app.start();
 })();
