@@ -6,6 +6,9 @@
     var ui = WinJS.UI;
     var utils = WinJS.Utilities;
     var theme;
+    var that;
+    var synth = new Windows.Media.SpeechSynthesis.SpeechSynthesizer();
+    var audio = new Audio();
 
     ui.Pages.define("/pages/splitdata/splitdata.html", {
 
@@ -28,6 +31,7 @@
 
         // This function is called whenever a user navigates to this page.
         ready: function (element, options) {
+            that = this;
             theme = options.theme;
             WinJS.Utilities.addClass(document.getElementsByTagName("body")[0], theme);
             element.querySelector(".pagehometitle").innerText = options.title;
@@ -56,6 +60,7 @@
 
         unload: function () {
             WinJS.Utilities.removeClass(document.getElementsByTagName("body")[0], theme);
+            audio.pause();
             this._items.dispose();
         },
 
@@ -139,6 +144,7 @@
                         details.scrollTop = 0;
                     }
                 }
+                that.speech();
             }.bind(this));
         },
 
@@ -158,6 +164,33 @@
                 utils.removeClass(consejos, "groupdetail");
                 utils.removeClass(consejos, "itemdetail");
                 element.querySelector(".itemlist").focus();
+            }
+        },
+        // This function toggles visibility of the two columns based on the current
+        // view state and item selection.
+        speech: function (element) {
+            var allVoices = Windows.Media.SpeechSynthesis.SpeechSynthesizer.allVoices;
+            var selectedVoice;
+            allVoices.forEach(function(e) {
+                if (e.language == "es-ES" || e.language == "es-MX" || e.language == "es-AR") {
+                    selectedVoice = e;
+                }
+            });
+            if (selectedVoice) {
+                synth.voice = selectedVoice;
+                var txtData = document.getElementById("data");
+                synth.synthesizeTextToStreamAsync(txtData.textContent).then(function (markersStream) {
+                    audio.pause();
+                    var blob = MSApp.createBlobFromRandomAccessStream(markersStream.ContentType, markersStream);
+                    audio.src = URL.createObjectURL(blob, { oneTimeOnly: true });
+                    markersStream.seek(0); //start at beginning when speak is hit
+                    audio.AutoPlay = Boolean(true);
+                    audio.play();
+                },
+                function OnError(error) {
+                    //statusDiv.innerText = "Failed";
+                    //statusDiv.style.color = "red";
+                });
             }
         }
     });
